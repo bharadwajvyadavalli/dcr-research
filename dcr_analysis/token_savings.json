@@ -1,0 +1,47 @@
+{
+  "openai": {
+    "baseline_total_tokens": 498425,
+    "baseline_avg_tokens": 498,
+    "baseline_count": 1000,
+    "simple_neural_total_tokens": 333814,
+    "simple_neural_avg_tokens": 334,
+    "simple_neural_count": 1000,
+    "roberta_total_tokens": 338640,
+    "roberta_avg_tokens": 339,
+    "roberta_count": 1000,
+    "simple_neural_savings": 164611,
+    "simple_neural_savings_pct": 33.03,
+    "roberta_savings": 159785,
+    "roberta_savings_pct": 32.06
+  },
+  "gemini": {
+    "baseline_total_tokens": 495676,
+    "baseline_avg_tokens": 496,
+    "baseline_count": 1000,
+    "simple_neural_total_tokens": 327910,
+    "simple_neural_avg_tokens": 328,
+    "simple_neural_count": 1000,
+    "roberta_total_tokens": 332433,
+    "roberta_avg_tokens": 332,
+    "roberta_count": 1000,
+    "simple_neural_savings": 167766,
+    "simple_neural_savings_pct": 33.85,
+    "roberta_savings": 163243,
+    "roberta_savings_pct": 32.93
+  },
+  "claude": {
+    "baseline_total_tokens": 454975,
+    "baseline_avg_tokens": 455,
+    "baseline_count": 1000,
+    "simple_neural_total_tokens": 306634,
+    "simple_neural_avg_tokens": 307,
+    "simple_neural_count": 1000,
+    "roberta_total_tokens": 310718,
+    "roberta_avg_tokens": 311,
+    "roberta_count": 1000,
+    "simple_neural_savings": 148341,
+    "simple_neural_savings_pct": 32.6,
+    "roberta_savings": 144257,
+    "roberta_savings_pct": 31.71
+  }
+}

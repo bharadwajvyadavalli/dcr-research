@@ -1,0 +1,29 @@
+{
+  "openai": {
+    "simple_neural_accuracy": 90.5,
+    "simple_neural_matches": 905,
+    "simple_neural_misses": 95,
+    "roberta_accuracy": 89.5,
+    "roberta_matches": 895,
+    "roberta_misses": 105,
+    "router_agreement": 90.4
+  },
+  "gemini": {
+    "simple_neural_accuracy": 90.5,
+    "simple_neural_matches": 905,
+    "simple_neural_misses": 95,
+    "roberta_accuracy": 89.5,
+    "roberta_matches": 895,
+    "roberta_misses": 105,
+    "router_agreement": 90.4
+  },
+  "claude": {
+    "simple_neural_accuracy": 90.5,
+    "simple_neural_matches": 905,
+    "simple_neural_misses": 95,
+    "roberta_accuracy": 89.5,
+    "roberta_matches": 895,
+    "roberta_misses": 105,
+    "router_agreement": 90.4
+  }
+}

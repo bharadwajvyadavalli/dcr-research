@@ -1,0 +1,10 @@
+Provider,Strategy,Total,Succeeded,Failed,Success Rate (%)
+openai,baseline,1000,1000,0,100.0
+openai,simple_neural,1000,1000,0,100.0
+openai,roberta,1000,1000,0,100.0
+gemini,baseline,1000,1000,0,100.0
+gemini,simple_neural,1000,1000,0,100.0
+gemini,roberta,1000,1000,0,100.0
+claude,baseline,1000,1000,0,100.0
+claude,simple_neural,1000,1000,0,100.0
+claude,roberta,1000,1000,0,100.0

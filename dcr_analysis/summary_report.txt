@@ -1,0 +1,127 @@
+======================================================================
+DCR MULTI-PROVIDER ANALYSIS REPORT
+======================================================================
+
+DATA QUALITY VALIDATION:
+----------------------------------------------------------------------
+
+⚠️  OPENAI - simple_neural:
+    2 suspiciously low token responses (<20 tokens)
+    → Likely valid short answers (no error keywords detected)
+    Sample responses:
+      Q472: 16 tokens - "Answer: C  
+The sum of 110 and 70 is 180...."
+      Q610: 18 tokens - "Answer: C  
+A 'sawbuck' is slang for a ten-dollar bill...."
+    Token distribution: min=16, avg=334.3, max=500
+    <20 tokens: 2, 20-100: 160, 100-300: 306, >300: 532
+
+⚠️  OPENAI - roberta:
+    1 suspiciously low token responses (<20 tokens)
+    → Likely valid short answers (no error keywords detected)
+    Sample responses:
+      Q472: 16 tokens - "Answer: C  
+The sum of 110 and 70 is 180...."
+    Token distribution: min=16, avg=339.0, max=500
+    <20 tokens: 1, 20-100: 159, 100-300: 293, >300: 547
+
+⚠️  GEMINI - simple_neural:
+    4 suspiciously low token responses (<20 tokens)
+    → Likely valid short answers (no error keywords detected)
+    Sample responses:
+      Q472: 19 tokens - "Answer: C. 110 plus 70 equals 180.
+..."
+      Q610: 16 tokens - "Answer: C A sawbuck is slang for a ten-dollar bill.
+..."
+      Q732: 19 tokens - "Answer: D Shakira is using a step-by-step procedure to solve the problem.
+..."
+    Token distribution: min=16, avg=330.3, max=519
+    <20 tokens: 4, 20-100: 173, 100-300: 286, >300: 537
+
+⚠️  GEMINI - roberta:
+    3 suspiciously low token responses (<20 tokens)
+    → Likely valid short answers (no error keywords detected)
+    Sample responses:
+      Q469: 15 tokens - "Answer: C The tropical rainforest is known for its exceptionally high biodiversi..."
+      Q473: 19 tokens - "Answer: A Lucy will not count 11 because she is counting by even numbers.
+..."
+      Q852: 16 tokens - "Answer: B because 56 divided by 8 equals 7.
+..."
+    Token distribution: min=15, avg=334.8, max=518
+    <20 tokens: 3, 20-100: 171, 100-300: 277, >300: 549
+
+⚠️  CLAUDE - simple_neural:
+    1 suspiciously low token responses (<20 tokens)
+    → Likely valid short answers (no error keywords detected)
+    Sample responses:
+      Q771: 17 tokens - "Answer: A) It compares two means from unrelated samples...."
+    Token distribution: min=17, avg=335.4, max=500
+    <20 tokens: 1, 20-100: 112, 100-300: 352, >300: 535
+
+Dataset:
+  Questions: 1000
+  Providers: 3 (openai, gemini, claude)
+  Strategies: 3
+  Total API calls: 9000
+
+Router Accuracy (vs. Baseline Ground Truth):
+----------------------------------------------------------------------
+
+OPENAI:
+  Simple Neural: 90.5% (905/1000 correct)
+  RoBERTa:       89.5% (895/1000 correct)
+  Agreement:     90.4% (routers agree with each other)
+
+GEMINI:
+  Simple Neural: 90.5% (905/1000 correct)
+  RoBERTa:       89.5% (895/1000 correct)
+  Agreement:     90.4% (routers agree with each other)
+
+CLAUDE:
+  Simple Neural: 90.5% (905/1000 correct)
+  RoBERTa:       89.5% (895/1000 correct)
+  Agreement:     90.4% (routers agree with each other)
+
+Actual Token Savings from Real API Responses (vs. Baseline):
+----------------------------------------------------------------------
+
+OPENAI:
+  Baseline:      498,425 tokens (avg: 498 tokens/response)
+  Simple Neural: 333,814 tokens (avg: 334 tokens/response)
+                 Saves 164,611 tokens (33.0%)
+  RoBERTa:       338,640 tokens (avg: 339 tokens/response)
+                 Saves 159,785 tokens (32.1%)
+
+GEMINI:
+  Baseline:      495,676 tokens (avg: 496 tokens/response)
+  Simple Neural: 327,910 tokens (avg: 328 tokens/response)
+                 Saves 167,766 tokens (33.9%)
+  RoBERTa:       332,433 tokens (avg: 332 tokens/response)
+                 Saves 163,243 tokens (32.9%)
+
+CLAUDE:
+  Baseline:      454,975 tokens (avg: 455 tokens/response)
+  Simple Neural: 306,634 tokens (avg: 307 tokens/response)
+                 Saves 148,341 tokens (32.6%)
+  RoBERTa:       310,718 tokens (avg: 311 tokens/response)
+                 Saves 144,257 tokens (31.7%)
+
+API Success Rates by Provider and Strategy:
+----------------------------------------------------------------------
+
+OPENAI:
+  baseline       : 1000/1000 (100.0%)
+  simple_neural  : 1000/1000 (100.0%)
+  roberta        : 1000/1000 (100.0%)
+
+GEMINI:
+  baseline       : 1000/1000 (100.0%)
+  simple_neural  : 1000/1000 (100.0%)
+  roberta        : 1000/1000 (100.0%)
+
+CLAUDE:
+  baseline       : 1000/1000 (100.0%)
+  simple_neural  : 1000/1000 (100.0%)
+  roberta        : 1000/1000 (100.0%)
+
+======================================================================

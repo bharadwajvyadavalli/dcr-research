@@ -1,0 +1,79 @@
+
+================================================================================
+MULTI-PROVIDER DCR ANALYSIS SUMMARY
+================================================================================
+
+Dataset:
+  Questions: 1,000
+  Providers: 3 (OPENAI, GEMINI, CLAUDE)
+  Strategies per Provider: 3 (baseline, simple_neural, roberta)
+  Total API Calls: 9,000
+
+================================================================================
+ROUTER ACCURACY (vs. Baseline Ground Truth)
+================================================================================
+
+
+OPENAI:
+  Simple Neural: 90.7% (907/1000 correct)
+  RoBERTa:       89.5% (895/1000 correct)
+
+GEMINI:
+  Simple Neural: 90.7% (907/1000 correct)
+  RoBERTa:       89.5% (895/1000 correct)
+
+CLAUDE:
+  Simple Neural: 90.7% (907/1000 correct)
+  RoBERTa:       89.5% (895/1000 correct)
+
+================================================================================
+TOKEN SAVINGS (vs. Always-Verbose Baseline)
+================================================================================
+
+OPENAI:
+  Baseline:      500,000 tokens
+  Simple Neural: 340,700 tokens (saves 159,300 tokens, 31.9%)
+  RoBERTa:       347,150 tokens (saves 152,850 tokens, 30.6%)
+
+GEMINI:
+  Baseline:      500,000 tokens
+  Simple Neural: 340,700 tokens (saves 159,300 tokens, 31.9%)
+  RoBERTa:       347,150 tokens (saves 152,850 tokens, 30.6%)
+
+CLAUDE:
+  Baseline:      500,000 tokens
+  Simple Neural: 340,700 tokens (saves 159,300 tokens, 31.9%)
+  RoBERTa:       347,150 tokens (saves 152,850 tokens, 30.6%)
+
+================================================================================
+API SUCCESS RATES
+================================================================================
+
+OPENAI:
+  baseline       : 1000/1000 (100.0%)
+  simple_neural  : 1000/1000 (100.0%)
+  roberta        : 1000/1000 (100.0%)
+
+GEMINI:
+  baseline       : 1000/1000 (100.0%)
+  simple_neural  : 1000/1000 (100.0%)
+  roberta        : 1000/1000 (100.0%)
+
+CLAUDE:
+  baseline       : 1000/1000 (100.0%)
+  simple_neural  : 1000/1000 (100.0%)
+  roberta        : 1000/1000 (100.0%)
+
+================================================================================
+AVERAGE PERFORMANCE ACROSS PROVIDERS
+================================================================================
+
+Simple Neural DCR:
+  Avg Routing Accuracy: 90.7%
+  Avg Token Savings:    31.9%
+
+RoBERTa DCR:
+  Avg Routing Accuracy: 89.5%
+  Avg Token Savings:    30.6%
+
+================================================================================

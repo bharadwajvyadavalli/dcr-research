@@ -1,0 +1,71 @@
+# DCR Research Configuration
+
+# ============================================
+# Inference Pipeline Settings
+# ============================================
+
+# Mode: "testing" (cheap models) or "production" (premium models)
+# Change to "production" for final research runs with premium models
+#
+# Testing Models (input/output per 1M tokens):
+#   - gpt-4o-mini:           $0.15 / $0.60
+#   - gemini-2.0-flash-lite: $0.075 / $0.30
+#   - claude-haiku:          $0.80 / $4.00
+#
+# Production Models (input/output per 1M tokens):
+#   - gpt-4o:         $2.50 / $10.00
+#   - gemini-2.5-pro: $1.25 / $10.00  (< 200K context)
+#   - claude-sonnet:  $3.00 / $15.00  (< 200K context)
+mode: "testing"
+# For this implementation, we are using the cheapest models available.
+# Tried using gpt-4o, gemini-2.5-pro and claude-sonnet-4-5-20250929 but they were too expensive.
+# Please do not change the models for whatever reason.
+# LLM Provider Models
+llm_providers:
+  openai:
+    api_key: "${OPENAI_API_KEY}"
+    models:
+      testing: "gpt-4o-mini"           # $0.15/1M tokens (cheap for testing)
+      production: "gpt-4o-mini"              # $2.50/1M tokens (premium)
+    temperature: 0.0
+
+  gemini:
+    api_key: "${GOOGLE_API_KEY}"
+    models:
+      testing: "gemini-2.0-flash-lite"       # $0.075/1M - 4K RPM, 4M TPM, unlimited RPD
+      production: "gemini-2.0-flash-lite"           # $1.25/1M  - Premium model for production
+    temperature: 0.0
+
+  anthropic:
+    api_key: "${ANTHROPIC_API_KEY}"
+    models:
+      testing: "claude-3-haiku-20240307"       # $0.25/1M input, $1.25/1M output (3x cheaper!)
+      production: "claude-3-haiku-20240307"    # Same - cost savings for research
+    temperature: 0.0
+
+# ============================================
+# Training Settings (for MLP router training)
+# ============================================
+openai:
+  api_key: "${OPENAI_API_KEY}"
+
+# Model Architecture Settings
+models:
+  # MLP Router Architecture (Production Model)
+  simple_neural:
+    neural_network:
+      hidden_layer_sizes: [512, 256, 128]
+      max_iter: 1000
+      random_state: 42
+
+# Template Settings
+# max_tokens: Hard caps on API response length per template (default: 1000 if not specified)
+# This ensures token reduction through both soft prompts AND hard limits
+templates:
+  max_tokens:
+    minimal: 50      # Brief, direct answers
+    standard: 200    # Clear step-by-step explanations
+    verbose: 500     # Detailed explanations with context
+    technical: 400   # Technical depth with methodology
+    educational: 350 # Pedagogical explanations
+    executive: 150   # High-level summaries

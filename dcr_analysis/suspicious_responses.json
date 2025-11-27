@@ -1,0 +1,112 @@
+[
+  {
+    "provider": "openai",
+    "strategy": "simple_neural",
+    "question_idx": 472,
+    "question": "Find the exact answer: 110 + 70\n\nA) 18\nB) 81\nC) 180\nD) 810",
+    "output_tokens": 16,
+    "response_preview": "Answer: C  \nThe sum of 110 and 70 is 180.",
+    "full_response": "Answer: C  \nThe sum of 110 and 70 is 180.",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "openai",
+    "strategy": "simple_neural",
+    "question_idx": 610,
+    "question": "If you have a 'sawbuck' how much money do you have?\n\nA) $1 \nB) $5 \nC) $10 \nD) $20",
+    "output_tokens": 18,
+    "response_preview": "Answer: C  \nA 'sawbuck' is slang for a ten-dollar bill.",
+    "full_response": "Answer: C  \nA 'sawbuck' is slang for a ten-dollar bill.",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "openai",
+    "strategy": "roberta",
+    "question_idx": 472,
+    "question": "Find the exact answer: 110 + 70\n\nA) 18\nB) 81\nC) 180\nD) 810",
+    "output_tokens": 16,
+    "response_preview": "Answer: C  \nThe sum of 110 and 70 is 180.",
+    "full_response": "Answer: C  \nThe sum of 110 and 70 is 180.",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "gemini",
+    "strategy": "simple_neural",
+    "question_idx": 472,
+    "question": "Find the exact answer: 110 + 70\n\nA) 18\nB) 81\nC) 180\nD) 810",
+    "output_tokens": 19,
+    "response_preview": "Answer: C. 110 plus 70 equals 180.\n",
+    "full_response": "Answer: C. 110 plus 70 equals 180.\n",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "gemini",
+    "strategy": "simple_neural",
+    "question_idx": 610,
+    "question": "If you have a 'sawbuck' how much money do you have?\n\nA) $1 \nB) $5 \nC) $10 \nD) $20",
+    "output_tokens": 16,
+    "response_preview": "Answer: C A sawbuck is slang for a ten-dollar bill.\n",
+    "full_response": "Answer: C A sawbuck is slang for a ten-dollar bill.\n",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "gemini",
+    "strategy": "simple_neural",
+    "question_idx": 732,
+    "question": "Rather than use a shortcut to find out various possible combinations of alleles that could result fr",
+    "output_tokens": 19,
+    "response_preview": "Answer: D Shakira is using a step-by-step procedure to solve the problem.\n",
+    "full_response": "Answer: D Shakira is using a step-by-step procedure to solve the problem.\n",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "gemini",
+    "strategy": "roberta",
+    "question_idx": 469,
+    "question": "A researcher conducts a survey of a biome and finds 35 percent more species than she has found in an",
+    "output_tokens": 15,
+    "response_preview": "Answer: C The tropical rainforest is known for its exceptionally high biodiversity.\n",
+    "full_response": "Answer: C The tropical rainforest is known for its exceptionally high biodiversity.\n",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "gemini",
+    "strategy": "roberta",
+    "question_idx": 473,
+    "question": "Lucy is counting by 2s. She starts with the number 2 and stops at the number 50. Which number would ",
+    "output_tokens": 19,
+    "response_preview": "Answer: A Lucy will not count 11 because she is counting by even numbers.\n",
+    "full_response": "Answer: A Lucy will not count 11 because she is counting by even numbers.\n",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "gemini",
+    "strategy": "roberta",
+    "question_idx": 852,
+    "question": "Use mental math to solve 8y = 56.\n\nA) 6\nB) 7\nC) 8\nD) 9",
+    "output_tokens": 16,
+    "response_preview": "Answer: B because 56 divided by 8 equals 7.\n",
+    "full_response": "Answer: B because 56 divided by 8 equals 7.\n",
+    "likely_error": false,
+    "template_used": "unknown"
+  },
+  {
+    "provider": "claude",
+    "strategy": "simple_neural",
+    "question_idx": 771,
+    "question": "Parametric Tests are used when data is interval or ration. There are 3 types of T-tests; from your k",
+    "output_tokens": 17,
+    "response_preview": "Answer: A) It compares two means from unrelated samples.",
+    "full_response": "Answer: A) It compares two means from unrelated samples.",
+    "likely_error": false,
+    "template_used": "unknown"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "baseline_vs_simple_neural": {
+    "openai": {
+      "baseline_success_rate": 100.0,
+      "simple_neural_success_rate": 100.0,
+      "improvement": 0.0
+    },
+    "gemini": {
+      "baseline_success_rate": 100.0,
+      "simple_neural_success_rate": 100.0,
+      "improvement": 0.0
+    },
+    "claude": {
+      "baseline_success_rate": 100.0,
+      "simple_neural_success_rate": 100.0,
+      "improvement": 0.0
+    }
+  },
+  "baseline_vs_roberta": {
+    "openai": {
+      "baseline_success_rate": 100.0,
+      "roberta_success_rate": 100.0,
+      "improvement": 0.0
+    },
+    "gemini": {
+      "baseline_success_rate": 100.0,
+      "roberta_success_rate": 100.0,
+      "improvement": 0.0
+    },
+    "claude": {
+      "baseline_success_rate": 100.0,
+      "roberta_success_rate": 100.0,
+      "improvement": 0.0
+    }
+  },
+  "simple_neural_vs_roberta": {
+    "openai": {
+      "simple_neural_success_rate": 100.0,
+      "roberta_success_rate": 100.0,
+      "difference": 0.0
+    },
+    "gemini": {
+      "simple_neural_success_rate": 100.0,
+      "roberta_success_rate": 100.0,
+      "difference": 0.0
+    },
+    "claude": {
+      "simple_neural_success_rate": 100.0,
+      "roberta_success_rate": 100.0,
+      "difference": 0.0
+    }
+  }
+}
