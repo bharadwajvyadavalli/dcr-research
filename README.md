@@ -2,6 +2,25 @@
 
 **Optimizing LLM Output Token Usage Through Intelligent Template Selection**
 
+## Paper
+
+This research has been published as a pre-print on arXiv:
+
+**[Dynamic Compute Routing: Optimizing LLM Output Token Usage Through Intelligent Template Selection](https://arxiv.org/abs/2511.20683)**
+
+If you use this code or find our research useful, please cite:
+
+```bibtex
+@article{yadavalli2025dcr,
+  title={Dynamic Compute Routing: Optimizing LLM Output Token Usage Through Intelligent Template Selection},
+  author={Yadavalli, Bharadwaj},
+  journal={arXiv preprint arXiv:2511.20683},
+  year={2025}
+}
+```
+
+---
+
 ## Overview
 
 This research evaluates routing strategies for reducing LLM output tokens by intelligently selecting prompt templates based on question complexity. We compare three approaches across OpenAI, Google Gemini, and Anthropic Claude.
