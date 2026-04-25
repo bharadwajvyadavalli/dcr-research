@@ -21,6 +21,19 @@ If you use this code or find our research useful, please cite:
 
 ---
 
+## Architecture
+
+![DCR Research Workflow](architecture_diagram.png)
+
+The research pipeline supports both local development and AWS-based training/inference. Key components:
+
+- **AWS EC2 Instance** - GPU-enabled instance (g4dn.xlarge/p3.2xlarge) for data setup, router training, and large-scale inference
+- **External LLM APIs** - OpenAI GPT-4o, Google Gemini Pro/Flash, and Anthropic Claude Sonnet/Haiku for response generation
+- **Amazon S3** - Central storage for MMLU data, trained models, and inference results
+- **Local Machine** - Development, configuration management, and results analysis/visualization
+
+---
+
 ## Overview
 
 This research evaluates routing strategies for reducing LLM output tokens by intelligently selecting prompt templates based on question complexity. We compare three approaches across OpenAI, Google Gemini, and Anthropic Claude.
